@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  box-sizing:border-box;
+font-family: 'Work Sans';
+margin:0;
+padding:0;
+}
+html{
+scroll-behavior:smooth;
+
+}/*MENU*/
+.contenedor-header {
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  align-items: center;
+  background: #1e2326;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 99;
+}
+.nav-responsive{
+background-color: #0085a3;
+color: #fff;
+padding: 5px 10px;
+border-radius: 5px;
+cursor: pointer;
+display: none;
+}
+#logo {
+  margin-right: auto; /* Asegura que "Santiago" se quede a la izquierda */
+font-family: 'righteous';
+font-size: 180%;
+color:#1cb698;
+text-decoration: none;
+
+}
+
+nav#nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+    margin-left: -15px;
+}
+
+
+nav#nav ul li {
+  margin-left: 10px; /* Espacio entre los elementos del menú */
+}
+
+nav#nav ul li a {
+  text-decoration: none;
+  color: white; /* Asegura que el texto sea visible contra el fondo oscuro */
+  margin-left: 0;
+}
+.contenido-banner {
+  text-align: center; /* Centra el contenido horizontalmente */
+  margin-top: 80px; /* Ajusta según necesites para el espaciado superior */
+}
+
+.contenedor-img img {
+  width: 190px; /* Ajusta el tamaño de la imagen según necesites */
+  height: 190px; /* Asegúrate de que el alto y el ancho sean iguales para un círculo perfecto */
+  border-radius: 50%; /* Esto crea el efecto de círculo */
+  border: 5px solid #1cb698; /* Ajusta el color y el tamaño del borde según necesites */
+  object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+  
+}
+
+.contenido-banner h1 {
+  display: block; /* Hace que el nombre aparezca en una nueva línea */
+  margin-top: 5px; /* Espacio entre la imagen y el nombre */
+  font-size: 20px; /* Tamaño del texto para el nombre */
+  color: #ffffff; /* Color del texto para el nombre */
+  font-family: 'righteous';
+}
+/*seccion I N I C I O*/
+.inicio{
+  background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+  url(fondo.jpg);
+background-size: cover;
+height: 100vh;
+color: #ffff;
+display:flex;
+align-items: center;
+
+}
+.inicio .contenido-banner{
+padding:20px;
+background-color: #1e2326;
+max-width: 350px;
+margin: auto;
+text-align: center;
+border-radius:40px
+
+}
+ .redes a {
+  color:#fff;
+  display: inline-block;
+  text-decoration: none;
+  border:1px solid#fff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height:42px ;
+  margin: 20px 5px;
+  font-size: 20px;
+  transition: .3s;
+
+}
+
+.redes a:hover{
+  background-color: #1cb698;
+}
+.perfil{
+  background-color: #1e2326;
+  color:#fff;
+  padding: 30px 20px;
+
+}
+.perfil .contenido-seccion{
+  max-width: 1100px;
+  margin: auto;
+}
+.perfil h2{
+  font-size:45px ;
+  font-family:'Righteous';
+  text-align: center;
+  padding: 0px 0;
+
+}
+.perfil .contenido-seccion p{
+
+line-height: 22px;
+margin-bottom: 20px;
+font-size: 20px;
+}
+
+.perfil .contenido-seccion p span {
+  color: #1cb698; /* Cambia el color del texto a verde */
+  font-weight: bold; /* Hace el texto en negrita */
+  
+}
+
+.perfil .fila {
+  display: flex;
+}
+
+.perfil .fila .col {
+  width: 50%;
+}
+
+.perfil .fila .col h3 {
+  font-size: 28px;
+  font-family: 'Righteous';
+  margin-bottom: 25px;
+}
+
+
+
+.perfil .fila .col ul {
+  list-style: none;
+}
+
+.perfil .fila .col ul li {
+  margin: 12px 0;
+}
+
+.perfil .fila .col ul li strong {
+  display: inline-block;
+  color: #1cb698;
+  width: 130px;
+}
+  .perfil .fila .col .contenedor-intereses {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Crea cuatro columnas */
+    grid-template-rows: repeat(2, 100px); /* Crea dos filas, cada una de 100px de alto */
+    gap: 15px; /* Espacio entre cuadros */
+    justify-content: center; /* Centra los cuadros horizontalmente si hay espacio extra */
+}
+
+.perfil .fila .col .contenedor-intereses .interes {
+    width: 100px; /* Ancho fijo para cada interés */
+    height: 100px; /* Alto fijo para cada interés */
+    background-color: #252A2E; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.perfil .fila .col .contenedor-intereses .interes:hover{
+  background-color: #1cb698;
+
+}
+.perfil .fila .col .contenedor-intereses .interes i{
+font-size: 30px;
+margin-bottom: 10px;
+}
+.perfil button{
+  cursor:pointer;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  position: relative;
+  z-index: 10;
+  color:#ffffff;
+
+}
+
+
+.perfil button .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background-color: #1cb698;
+  z-index: -1;
+  transition: 1s;
+}
+.perfil button:hover .overlay{
+  width: 100%;
+  
+  }
+  /*SECCION S K I L L*/
+  .habilidades{
+    background-color: #252A2E;
+    color:#fff;
+    padding: 50px 20px;
+  
+  }
+  .habilidades .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+  }
+  .habilidades h2{
+    font-size:45px ;
+    font-family:'Righteous';
+    text-align: center;
+    padding: 0px 0;
+  
+  }
+  .habilidades .fila{
+display: flex;
+  }
+.habilidades .fila .col{
+  width: 50%;
+  padding: 0 20px;
+
+}
+
+  .habilidades .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+  }
+.habilidades .skill >span{
+  font-weight:bold ;
+  display: block;
+  margin-bottom: 10px;
+}
+.habilidades .skill .barra-skill{
+  height: 8px;
+  width: 80%;
+  background-color: #131517;
+position: relative;
+margin-bottom: 30px;
+
+}
+.habilidades .skill .progreso{
+  background-color: #1cb698;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  }
+  .habilidades .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1cb698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+  }
+  /*ESTAS CLASES SE AGREGARAN DINAMICAMENTE MEDIANTE JAVA*/
+  .habilidades .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+  
+  }
+@keyframes javascript {
+  0%{width: 0%;}
+100%{width: 50%;}
+}
+.habilidades .skill .htmlcss{
+  width: 0%;
+  animation: 2s htmlcss forwards;
+
+}
+@keyframes htmlcss{
+0%{width: 0%;}
+100%{width: 75%;}
+}
+
+.habilidades .skill .Java{
+  width: 0%;
+  animation: 2s Java forwards;
+
+}
+@keyframes Java{
+0%{width: 0%;}
+100%{width: 60%;}
+
+}
+.habilidades .skill .Canva{
+  width: 0%;
+  animation: 2s Canva forwards;
+
+}
+@keyframes Canva{
+0%{width: 0%;}
+100%{width: 90%;}
+
+}
+.habilidades .skill .Comunicacion{
+  width: 0%;
+  animation: 2s Comunicacion forwards;
+
+}
+@keyframes Comunicacion{
+0%{width: 0%;}
+100%{width: 95%;}
+
+}
+.habilidades .skill .Trabajo {
+  width: 0%;
+  animation: 2s Trabajo forwards;
+
+}
+@keyframes Trabajo {
+0%{width: 0%;}
+100%{width: 90%;}
+
+}
+.habilidades .skill .Creatividad {
+  width: 0%;
+  animation: 2s Creatividad forwards;
+
+}
+@keyframes Creatividad {
+0%{width: 0%;}
+100%{width: 95%;}
+
+}         
+.habilidades .skill .Dedicacion {
+  width: 0%;
+  animation: 2s Dedicacion forwards;
+
+}
+@keyframes Dedicacion {
+0%{width: 0%;}
+100%{width: 95%;}
+
+}  
+
+
+/*SECCION CURRICULUM*/
+.curriculum{
+  background-color: #1e2326;
+  color:#fff;
+  padding: 50px 20px;
+
+}
+.curriculum .contenido-seccion{
+  max-width: 1100px;
+  margin: auto;
+}
+.curriculum h2{
+  font-size:45px ;
+  font-family:'Righteous';
+  text-align: center;
+  padding: 15px 0;
+
+}
+.curriculum .fila{
+display: flex;
+justify-content:space-between ;
+ }
+ 
+ .derecha .item {
+ 
+  max-width: 1100px;
+  margin: auto
+
+}
+.curriculum .fila .col{
+  width:49%;
+  padding: 0 20px;
+   }
+   .curriculum .fila .col  h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+    right: 80%; 
+     }
+     .curriculum .fila .izquierda{
+      border-right: 2px solid #252A2E;
+     }
+     .curriculum .fila .derecha{
+      border-left: 2px solid #252A2E;
+     
+     }
+     .curriculum .fila .item{
+padding: 25px;
+margin-bottom: 30px;
+background-color: #252A2E;
+position: relative;
+     
+     }
+     .curriculum .fila .item h4{
+      font-size: 20px;
+      margin-bottom:10px;
+
+    }
+  
+  .curriculum .fila .item .casa{
+   color: #898c8b;
+    font-size: 22px;
+   font-weight: bold;
+   display: block;
+   
+ }
+.curriculum .fila .izq{
+  border-right: 2px solid #1cb698;
+margin-right: 20px;
+}
+
+.curriculum .fila .der{
+  border-left: 2px solid #1cb698;
+margin-left: 20px;
+}
+.curriculum .fila .item .conectori{
+  height: 2px;
+  background-color:#1cb698 ;
+  width: 47px;
+  position: absolute;
+  top:50%;
+  right: -47px;
+  z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+ display: block;
+ height: 10px;
+ width: 10px;
+ border-radius: 50%;
+ background-color: #1cb698;
+ float: right;
+ position: relative;
+ bottom: 5px;
+}
+.curriculum .fila .item .conectord{
+  height: 2px;
+  background-color:#1cb698 ;
+  width: 47px;
+  position: absolute;
+  top:50%;
+  left: -47px;
+  z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+ display: block;
+ height: 10px;
+ width: 10px;
+ border-radius: 50%;
+ background-color: #1cb698;
+ float: left;
+ position: relative;
+ bottom: 5px;
+}
+/*SECCCION CONTACTO*/
+.contacto{
+  background-image: url(ubi.png);
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 0;
+}
+.contacto .contenido-seccion{
+  max-width: 1100px;
+  margin: auto;
+}
+
+  .contacto h2{
+    font-size:45px ;
+    font-family:'Righteous';
+    text-align: center;
+    padding: 15px 0;
+  
+}
+.contacto .fila{
+  display:flex;
+  
+}
+.contacto .col {
+ width: 50px;
+ padding: 10px;
+ position: relative;
+
+}
+.contacto .col input, .contacto .col textarea {
+  display: block;
+  width: 1990%;
+  padding: 18px;
+  border: none;
+  margin-bottom: 30px;
+  background-color: #252A2E;
+  color: #fff;
+  font-size: 18px;
+
+}
+.contacto button{
+   
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    width: 100; /* Ajuste para que el ancho se base en el contenido y el padding */
+    display: block;
+    margin: 20px auto; /* Centra el botón horizontalmente */
+    padding: 10px 90px; /* Ajustado para proporcionar espaciado interno, ajusta según necesites */
+    font-size: 16px;
+    /* position: center; Este es inválido y se ha eliminado */
+    z-index: 10;
+    color: #ffffff;
+    white-space: nowrap; /* Evita que el texto se envuelva */
+  overflow: hidden; /* Esconde el contenido que desborde el ancho del botón */
+  text-overflow: ellipsis;
+  margin-left: 130px;
+  }
+.contacto button .overlay {
+     /* Hace que els span se comporte como un bloque */
+    width: 0%; /* Asegura que el overlay cubra todo el botón */
+    height: 0%; /* Asegura que el overlay cubra todo el botón */
+    background-color: rgba(255, 255, 255, 0.2); /* Color de overlay semi-transparente */
+    position: absolute; /* Posiciona el overlay respecto al botón */
+    top: 0;
+    left: 0; /* Inicia el overlay fuera del botón */
+    transition:  0.3s; /* Transición suave para el efecto de deslizamiento */
+    z-index: 1; /* Asegura que el overlay esté sobre el fondo del botón pero debajo del texto/ícono */
+}
+
+.contacto button:hover .overlay {
+    width: 100%; /* Mueve el overlay para cubrir el botón al pasar el mouse */
+
+  }
+.contacto .col img{
+      width: 1700%; /* La imagen ocupa el 100% del ancho del contenedor */
+      margin-left: 600px;/* Mueve la imagen hacia la derecha */
+      margin-top: 10px;
+}
+.contacto .col .info{
+ position: absolute;
+ top: 40%;
+ background-color:#252A2E ;
+ padding: 20px;
+ width: 400px;
+ left: 1750%;
+ transform: translate(-50%, -50%);
+ 
+}
+.contacto .col .info ul{
+  list-style: none;
+ 
+}
+.contacto .col .info ul li{
+  margin-bottom: 20px;
+}
+.contacto  .col .info ul li i{
+  color: #1cb698;
+  display: inline-block;
+  margin-right: 20px;
+}
+footer{
+  background-color: #252A2E;
+  color: #fff;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+footer .red{
+margin-bottom: 20px;
+
+}
+footer .red a{
+    color:#fff;
+    display: inline-block;
+    text-decoration: none;
+    border:1px solid#fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height:42px ;
+    margin: 20px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+  display:block ;
+  width: 50px;
+  height: 50px;
+  background-color:#1cb698 ;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top:-25px ;
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 18px;
+}
+/*SECCION RESPONSIVE*/
+@media screen and(max-width:980px) {
+  nav{
+    display: none;
+  }
+  .nav-responsive{
+    display: block;
+  }
+  .nav.responsive{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75 px;
+    background-color: #252A2E;
+    width: 180px;
+  }
+  .nav.responsive ul{
+    display: block;
+  }
+  nav.responsive ul li{
+border-bottom:  1px solid #fff;
+padding: 10px 0;
+  }
+  @media screen and(max-width:700px){
+.perfil .fila{
+  display: block;
+}
+.perfil .fila .col{
+   width:fit-content;
+  }
+}
+.habilidades .fila{
+  display: block;
+}
+.habilidades .fila .col{
+   width:fit-content;
+  }
+  .habilidades .fila .col .barra-skill{
+     width:100%;
+  }
+
+  .curriculum .fila{
+    display: block;
+  }
+  .curriculum .fila .col{
+    width:90%;
+ }
+  .curriculum .fila  .derecha{
+     margin-left: 20px;
+
+    }
+    .contacto .fila{
+      display: block;
+    }
+    .contacto .fila .col{
+      width:100%;
+   }
+.vista {
+  text-align: center; /* Centra el texto horizontalmente */
+  font-family:'Righteous';
+
+}
+.vista {
+  text-align: center; /* Centra el texto horizontalmente */
+  font-family:'Righteous';
+
+}}
